@@ -1,9 +1,29 @@
 # Memory Index
 
-- [User Profile](user_profile.md) — 有赞产品研发，负责 CRM 访中助手（AI 实时意图识别）
-- [CRM Voice Project](project_crm_voice.md) — crm-voice 完整链路、性能瓶颈分析、快慢双通道优化方案
-- [Eval Framework](project_eval_framework.md) — 自动化评测框架，QA环境aigc超时待恢复
-- [Qixinbao Enrichment](project_qixinbao_enrichment.md) — crm-master Fill信息补全，四源并行，已基本实现
-- [Thread Pool Isolation](feedback_thread_pool.md) — 每个数据源必须独立线程池，不能复用
-- [Sales Buddy Project](project_sales_buddy.md) — crm-master-salesbuddy 销售助手，AI录音分析+客户管理+管理角色
-- [GitHub Memory Sync](reference_github_memory.md) — 记忆自动同步到 caocaoTang/claude-memory 私有仓库
+## 记忆管理规则
+
+按项目/话题分类存储，每个分类独立双队列淘汰（A1 观察队列 → Am 核心队列）。
+- 新记忆进 A1，引用 ≥2 次晋升 Am
+- A1 满时淘汰最老条目，Am 满时淘汰最久未引用条目
+- 各分类独立淘汰，互不影响
+- 每次读取/引用记忆时更新 _queue.json 的 hits 和 lastHit
+
+## 分类目录
+
+### _global/ — 跨项目（用户画像、通用偏好）
+- [user_profile.md](_global/user_profile.md) — 有赞产品研发，CRM AI 工具
+- [feedback_thread_pool.md](_global/feedback_thread_pool.md) — 线程池必须独立，不能复用
+
+### crm-master-fill/ — Fill 信息补全平台
+- [enrichment_design.md](crm-master-fill/enrichment_design.md) — 四源并行架构，已基本实现
+- [qxb_api.md](crm-master-fill/qxb_api.md) — 启信宝 API 接入细节，IP 白名单待配
+
+### crm-voice/ — 实时访中智能助手
+- [architecture.md](crm-voice/architecture.md) — 完整链路、快慢双通道优化方案
+- [eval_framework.md](crm-voice/eval_framework.md) — 评测框架，QA aigc 超时待恢复
+
+### salesbuddy/ — 销售助手
+- [overview.md](salesbuddy/overview.md) — AI 录音分析+客户管理，Vue 2 前端
+
+### _refs/ — 外部资源引用
+- [github_memory_sync.md](_refs/github_memory_sync.md) — 记忆自动同步 caocaoTang/claude-memory
