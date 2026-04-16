@@ -1,0 +1,9 @@
+{
+  "maxA1": 5,
+  "maxAm": 25,
+  "a1": [],
+  "am": [
+    {"file": "user_profile.md", "created": "2026-04-09", "hits": 6, "lastHit": "2026-04-16"},
+    {"file": "feedback_thread_pool.md", "created": "2026-04-13", "hits": 4, "lastHit": "2026-04-16"}
+  ]
+}

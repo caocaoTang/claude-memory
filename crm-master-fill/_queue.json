@@ -1,0 +1,10 @@
+{
+  "maxA1": 10,
+  "maxAm": 20,
+  "a1": [
+    {"file": "qxb_api.md", "created": "2026-04-16", "hits": 1, "lastHit": "2026-04-16"}
+  ],
+  "am": [
+    {"file": "enrichment_design.md", "created": "2026-04-13", "hits": 5, "lastHit": "2026-04-16"}
+  ]
+}

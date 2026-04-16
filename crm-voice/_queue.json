@@ -1,0 +1,9 @@
+{
+  "maxA1": 10,
+  "maxAm": 15,
+  "a1": [],
+  "am": [
+    {"file": "architecture.md", "created": "2026-04-10", "hits": 4, "lastHit": "2026-04-15"},
+    {"file": "eval_framework.md", "created": "2026-04-10", "hits": 3, "lastHit": "2026-04-15"}
+  ]
+}
