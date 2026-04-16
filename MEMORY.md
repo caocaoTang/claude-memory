@@ -31,6 +31,7 @@
 ### wechat-mp/ — 微信公众号「AI 工坊笔记」
 - [account.md](wechat-mp/account.md) — AppID/Secret、API限制（个人未认证号）
 - [content_plan.md](wechat-mp/content_plan.md) — 7栏目日更规划、黑金风格、发布工具链
+- [article_log.md](wechat-mp/article_log.md) — 已发布文章清单+话题关键词，防重复
 
 ### _refs/ — 外部资源引用
 - [github_memory_sync.md](_refs/github_memory_sync.md) — 记忆自动同步 caocaoTang/claude-memory
