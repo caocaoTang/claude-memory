@@ -25,5 +25,8 @@
 ### salesbuddy/ — 销售助手
 - [overview.md](salesbuddy/overview.md) — AI 录音分析+客户管理，Vue 2 前端
 
+### crm-feishu-voice/ — 飞书语音录制+实时转写
+- [architecture.md](crm-feishu-voice/architecture.md) — Java17+Vue3，听悟ASR，WebSocket实时流，多平台录音
+
 ### _refs/ — 外部资源引用
 - [github_memory_sync.md](_refs/github_memory_sync.md) — 记忆自动同步 caocaoTang/claude-memory
