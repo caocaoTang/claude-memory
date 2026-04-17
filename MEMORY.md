@@ -13,6 +13,7 @@
 ### _global/ — 跨项目（用户画像、通用偏好）
 - [user_profile.md](_global/user_profile.md) — 有赞产品研发，CRM AI 工具
 - [feedback_thread_pool.md](_global/feedback_thread_pool.md) — 线程池必须独立，不能复用
+- [pip_conf_corruption.md](_global/pip_conf_corruption.md) — /Library 下 pip.conf 被 null 字节污染，pip install 报 embedded null byte 时查它
 
 ### crm-master-fill/ — Fill 信息补全平台
 - [enrichment_design.md](crm-master-fill/enrichment_design.md) — 四源并行架构，已基本实现
