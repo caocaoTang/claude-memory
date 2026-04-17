@@ -32,7 +32,10 @@ originSessionId: 72735785-37c3-4b1c-bae7-8de773bc6636
 ## 专用 skill
 - `crm-master-pre-deploy` — 自动把当前开发分支加入 pre 集成分支，处理 JS 冲突（保留 master 为上一版），rebuild 前端，推送 merge 分支并切回
 - 脚本：`~/.claude/skills/crm-master-pre-deploy/scripts/deploy-pre.sh`
-- 关键设计：opscli add-branch 前对远端 `merge_pre/*` 打 snapshot，调用后 diff 识别新建分支，避免错选别人的旧 merge 分支
+- 关键设计：
+  - 开始先 `git fetch origin master` + 本地 `master` 快进到 `origin/master`（被其他 worktree 占用则仅更新 remote ref）
+  - opscli add-branch 前对远端 `merge_pre/*` 打 snapshot，调用后 diff 识别新建分支，避免错选别人的旧 merge 分支
+  - **Case B（复用已有 merge_pre）先 presync 再 opscli**：checkout merge_pre → merge origin/master → JS 冲突取 master 版本 → rebuild + push；让 OPS 服务端 merge(master→merge_pre) 变 fast-forward，避免 opscli 因服务端合并冲突失败（2026-04-17 salesbuddy 部署踩过的坑）
 
 ## opscli 认证
 - 用户使用 `OPS_JWT_TOKEN` 环境变量，没配 `~/.ops-token` 文件
