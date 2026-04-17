@@ -18,8 +18,9 @@ originSessionId: 72735785-37c3-4b1c-bae7-8de773bc6636
 **Why**：线上多机滚动发布时，老版本 HTML 已缓存在浏览器，引用旧 hash JS；请求被 LB 路由到已升级机器会 404。
 
 **How to apply**：
-- `crm-master-front/scripts/clean-old-assets.js` + `package.json` build 脚本：build 前读 `manifest.json`，保留上版文件，webpack 产出新版 → 目录常驻 2 版
-- 不要改回 `rm -rf ../crm-master-web/.../js/*`
+- `crm-master-front/scripts/clean-old-assets.js` 按 mtime 60s 窗口分批，默认保留最近 1 批（上一版）
+- `package.json` 里两条 build 并存：`build`（`rm -rf .../js/* && webpack`，本地/dev 用）、`build:keep-prev`（`node scripts/clean-old-assets.js && webpack`，**预发/线上必须用这条**）
+- deploy-pre.sh 已切到 `pnpm run build:keep-prev`；如果迁移到其他前端项目照搬这个思路
 - `app.css` 目前未 contenthash 化，CSS 在发版瞬间仍会覆盖导致样式错乱（已告知用户，暂不处理）
 
 ## Merge 分支约定
