@@ -9,6 +9,8 @@ type: project
 | 期号 | 日期 | 栏目 | 标题 | 文件 |
 |------|------|------|------|------|
 | 001 | 2026-04-16 | 模型拆解 | AI编程能替代多少工作 | articles/001-claude-code-deep-dive.md |
+| 002 | 2026-04-17 | 模型拆解 | Claude 4.7来了，值得升级吗 | articles/002-claude-opus-4-7.md |
 
 ## 已覆盖话题关键词
 - Claude Code、AI编程、Copilot对比、Agent、Opus 4.6、Routines
+- Claude Opus 4.7、xhigh推理等级、Task Budget、ultrareview、Mythos、GPT-5.4对比、Gemini 3.1对比、SWE-bench、CursorBench
