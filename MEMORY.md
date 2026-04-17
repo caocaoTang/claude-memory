@@ -15,6 +15,9 @@
 - [feedback_thread_pool.md](_global/feedback_thread_pool.md) — 线程池必须独立，不能复用
 - [pip_conf_corruption.md](_global/pip_conf_corruption.md) — /Library 下 pip.conf 被 null 字节污染，pip install 报 embedded null byte 时查它
 
+### crm-master/ — 智能CRM Agent 主应用
+- [deployment.md](crm-master/deployment.md) — JS 双版本保留防滚动发布 404；merge_pre 分支命名+检测；专用 pre-deploy skill
+
 ### crm-master-fill/ — Fill 信息补全平台
 - [enrichment_design.md](crm-master-fill/enrichment_design.md) — 四源并行架构，已基本实现
 - [qxb_api.md](crm-master-fill/qxb_api.md) — 启信宝 API 接入细节，IP 白名单待配
