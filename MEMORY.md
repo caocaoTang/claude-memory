@@ -28,6 +28,12 @@
 
 ### salesbuddy/ — 销售助手
 - [overview.md](salesbuddy/overview.md) — AI 录音分析+客户管理，Vue 2 前端
+- [product_positioning.md](salesbuddy/product_positioning.md) — 工具→Agent/虚拟中层，1000 人规模是隐性 deadline
+- [v3_prototype_spec.md](salesbuddy/v3_prototype_spec.md) — 业务亲做 v3 HTML=产品规格事实源，含 5 个 AI 模块字段 schema
+- [spiced_framework.md](salesbuddy/spiced_framework.md) — SPICED（非 SPACE）6 维度，覆盖率+缺口+动作三段式
+- [tl_role.md](salesbuddy/tl_role.md) — TL=催节点+定时机，不做面谈沉淀，销售端质量评估已承载诊断
+- [meeting_2026_04_20.md](salesbuddy/meeting_2026_04_20.md) — 销售端优先+TL demo 本周+类目按有赞+美业业务自收集
+- [feedback_gap_not_percentage.md](salesbuddy/feedback_gap_not_percentage.md) — SPICED 禁止裸进度条，必带缺口描述
 
 ### crm-feishu-voice/ — 飞书语音录制+实时转写
 - [architecture.md](crm-feishu-voice/architecture.md) — Java17+Vue3，听悟ASR，WebSocket实时流，多平台录音
