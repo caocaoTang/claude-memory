@@ -1,7 +1,14 @@
 {
   "maxA1": 10,
   "maxAm": 15,
-  "a1": [],
+  "a1": [
+    {"file": "product_positioning.md", "created": "2026-04-20", "hits": 1, "lastHit": "2026-04-20"},
+    {"file": "spiced_framework.md", "created": "2026-04-20", "hits": 1, "lastHit": "2026-04-20"},
+    {"file": "tl_role.md", "created": "2026-04-20", "hits": 1, "lastHit": "2026-04-20"},
+    {"file": "v3_prototype_spec.md", "created": "2026-04-20", "hits": 1, "lastHit": "2026-04-20"},
+    {"file": "meeting_2026_04_20.md", "created": "2026-04-20", "hits": 1, "lastHit": "2026-04-20"},
+    {"file": "feedback_gap_not_percentage.md", "created": "2026-04-20", "hits": 1, "lastHit": "2026-04-20"}
+  ],
   "am": [
     {"file": "overview.md", "created": "2026-04-15", "hits": 2, "lastHit": "2026-04-15"}
   ]
