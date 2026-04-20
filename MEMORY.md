@@ -37,6 +37,7 @@
 
 ### crm-feishu-voice/ — 飞书语音录制+实时转写
 - [architecture.md](crm-feishu-voice/architecture.md) — Java17+Vue3，听悟ASR，WebSocket实时流，多平台录音
+- [motivation.md](crm-feishu-voice/motivation.md) — 妙记拿不到销售私聊/外呼录音；自研价值在流程化不在覆盖
 
 ### wechat-mp/ — 微信公众号「AI 工坊笔记」
 - [account.md](wechat-mp/account.md) — AppID/Secret、API限制（个人未认证号）
