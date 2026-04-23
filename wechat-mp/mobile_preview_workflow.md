@@ -34,6 +34,7 @@ for i in range(n):
 3. **strong 黄色高亮跨行断裂** → 加 `box-decoration-break:clone; -webkit-box-decoration-break:clone`
 4. **table 列宽不受控溢出** → table 加 `table-layout:fixed`，td/th 加 `word-wrap:break-word`
 5. **letter-spacing 中英混排折行算错** → 从 p 样式里删掉 `letter-spacing:0.4px`
+6. **`<ol>`/`<ul>` 在微信草稿里编号错位**（本地 Chrome 预览正常！）→ 微信富文本编辑器会给每个 `<li>` 前塞一个空行，5 项变 11 项。`apply_inline_styles` 里把 ol/ul 整体替换成 `<section>` + 手写编号 `<p>`（编号放在 `<span>` 里，`padding-left:26px; text-indent:-26px` 实现悬挂缩进）。**本地预览看不出这个 bug，必须推草稿验证。**
 
-**Why:** 2026-04-24 写 008 之前用户反馈"之前发布的手机上看样式不兼容"。直接发草稿用户需要打开手机后台验证，反馈链太长。
-**How to apply:** 每篇推 publish.py 之前先跑 mobile_preview.py，切片 Read 检查 header / blockquote / table / 粗体 / 长英文引用，全部过了再推草稿。
+**Why:** 2026-04-24 写 008 之前用户反馈"之前发布的手机上看样式不兼容"。直接发草稿用户需要打开手机后台验证，反馈链太长。坑 6 是 2026-04-23 推 008 第一版草稿时发现的 —— 本地 mobile_preview.py 截图列表渲染完全正常，只有微信草稿箱里才暴露编号错位。
+**How to apply:** 每篇推 publish.py 之前先跑 mobile_preview.py，切片 Read 检查 header / blockquote / table / 粗体 / 长英文引用。**但列表类 bug 本地预览检测不到，publish.py 里的 ol/ul→section 转换必须保留。**
