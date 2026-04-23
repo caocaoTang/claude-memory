@@ -1,12 +1,14 @@
 ---
-name: v3 原型 = 产品规格事实源
-description: 业务亲自设计的 v3 HTML 是销售端规格基线，覆盖 5 个 AI 模块字段 schema
+name: v3 原型 = 能力参考（不是布局规范）
+description: 业务亲做 v3 HTML 是能力地图和字段 schema 来源，布局是参考不是照抄
 type: project
 originSessionId: 351ec4b8-b004-4a1b-a143-6caf37ff8760
 ---
-## 事实源
+## 定位：参考不是规范
 
-**/Users/tangcaocao/Downloads/sales_buddy_v3.html** 由业务（说话人 3）本人用 Claude 输出，是销售端功能的**产品规格事实源**。后续讨论直接拿 v3 当基线，不需要每次重新对齐交互。
+**/Users/tangcaocao/Downloads/sales_buddy_v3.html** 由业务（说话人 3）本人用 Claude 输出，提供**能力清单 + 5 个 AI 模块字段 schema**。用作能力对照表，但**布局和交互要基于当前 salesbuddy 代码的实际页面迭代**，不要照抄。
+
+典型偏离点：v3 工作台首屏不是"今日待办 TODO 流"（见 first_view_todo.md），这是要修正的，不是要保留的。
 
 v1/v2 是历史版本，v3 已自我修正大部分早期问题。另有 sales_buddy_v2.html、sales_buddy_v1.html 在同目录用于追溯演进。
 

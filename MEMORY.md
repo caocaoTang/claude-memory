@@ -29,7 +29,8 @@
 ### salesbuddy/ — 销售助手
 - [overview.md](salesbuddy/overview.md) — AI 录音分析+客户管理，Vue 2 前端
 - [product_positioning.md](salesbuddy/product_positioning.md) — 工具→Agent/虚拟中层，1000 人规模是隐性 deadline
-- [v3_prototype_spec.md](salesbuddy/v3_prototype_spec.md) — 业务亲做 v3 HTML=产品规格事实源，含 5 个 AI 模块字段 schema
+- [v3_prototype_spec.md](salesbuddy/v3_prototype_spec.md) — v3 HTML 是能力参考（字段 schema），布局不照抄
+- [first_view_todo.md](salesbuddy/first_view_todo.md) — 工作台首页=今日待办 TODO 流，按必做/重要/加分分组，v3 仅参考
 - [spiced_framework.md](salesbuddy/spiced_framework.md) — SPICED（非 SPACE）6 维度，覆盖率+缺口+动作三段式
 - [tl_role.md](salesbuddy/tl_role.md) — TL=催节点+定时机，不做面谈沉淀，销售端质量评估已承载诊断
 - [meeting_2026_04_20.md](salesbuddy/meeting_2026_04_20.md) — 销售端优先+TL demo 本周+类目按有赞+美业业务自收集
@@ -43,6 +44,7 @@
 - [account.md](wechat-mp/account.md) — AppID/Secret、API限制（个人未认证号）
 - [content_plan.md](wechat-mp/content_plan.md) — 7栏目日更规划、黑金风格、发布工具链
 - [article_log.md](wechat-mp/article_log.md) — 已发布文章清单+话题关键词，防重复
+- [feedback_signature.md](wechat-mp/feedback_signature.md) — 文末署名沿用统一格式，禁止自创个人化署名
 
 ### _refs/ — 外部资源引用
 - [github_memory_sync.md](_refs/github_memory_sync.md) — 记忆自动同步 caocaoTang/claude-memory
