@@ -45,6 +45,7 @@
 - [content_plan.md](wechat-mp/content_plan.md) — 7栏目日更规划、黑金风格、发布工具链
 - [article_log.md](wechat-mp/article_log.md) — 已发布文章清单+话题关键词，防重复
 - [feedback_signature.md](wechat-mp/feedback_signature.md) — 文末署名沿用统一格式，禁止自创个人化署名
+- [mobile_preview_workflow.md](wechat-mp/mobile_preview_workflow.md) — 推草稿前用 mobile_preview.py 截手机屏自测
 
 ### _refs/ — 外部资源引用
 - [github_memory_sync.md](_refs/github_memory_sync.md) — 记忆自动同步 caocaoTang/claude-memory
