@@ -16,6 +16,7 @@ originSessionId: fd261f76-6c66-47b8-8059-e0397e734bc5
 | 006 | 2026-04-22 | 实操手册 | 让 Claude 真的"记住你" | articles/006-claude-memory-system.md |
 | 007 | 2026-04-23 | 行业扫描 | 大模型混战的 3 条主线 | articles/007-big-model-war-three-lines.md |
 | 008 | 2026-04-24 | 深度长文 | Claude Code 的 1.6%（Agent 架构剖析 01） | articles/008-claude-code-architecture.md |
+| 009 | 2026-04-24 | 深度长文 | Claude Code 不做的那件事，Hermes 偏要做（Agent 架构剖析 02） | articles/009-hermes-agent-architecture.md |
 
 ## 已覆盖话题关键词
 - Claude Code、AI编程、Copilot对比、Agent、Opus 4.6、Routines
