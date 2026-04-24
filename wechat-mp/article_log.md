@@ -26,3 +26,4 @@ originSessionId: fd261f76-6c66-47b8-8059-e0397e734bc5
 - Hooks、PreToolUse/PostToolUse/Stop、exit 2 拦截、settings.json 作用域、block-secrets、bash-audit、auto-format、notify-done
 - Memory 系统、2Q 双队列淘汰、A1/Am 晋升、分类命名空间、MEMORY.md 索引、CLAUDE.md vs memory vs Task、PostToolUse GitHub 同步
 - 大模型混战、耐力线/成本线/上下文线、Claude Mythos 5、GPT-6 Spud、Gemini 3.1 Ultra、DeepSeek V4 $5.2M、GLM-5.1 8小时、Qwen 3.5-Omni、Gemma 4、千问·小九墨、门槛下移
+- Hermes Agent、Nous Research、learning loop、agent-curated memory、autonomous skill creation、agentskills.io、Honcho、Gateway 多平台、Daytona/Modal 冬眠、200+ 模型无锁、工具路线 vs 队友路线、Unix utility vs live companion
