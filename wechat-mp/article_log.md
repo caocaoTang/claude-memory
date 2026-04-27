@@ -17,6 +17,7 @@ originSessionId: fd261f76-6c66-47b8-8059-e0397e734bc5
 | 007 | 2026-04-23 | 行业扫描 | 大模型混战的 3 条主线 | articles/007-big-model-war-three-lines.md |
 | 008 | 2026-04-24 | 深度长文 | Claude Code 的 1.6%（Agent 架构剖析 01） | articles/008-claude-code-architecture.md |
 | 009 | 2026-04-24 | 深度长文 | Claude Code 不做的那件事，Hermes 偏要做（Agent 架构剖析 02） | articles/009-hermes-agent-architecture.md |
+| 010 | 2026-04-27 | 模型拆解 | DeepSeek V4：把价格打到 1/21，技术报告却坦白「落后 3-6 个月」 | articles/010-deepseek-v4-honesty.md |
 
 ## 已覆盖话题关键词
 - Claude Code、AI编程、Copilot对比、Agent、Opus 4.6、Routines
@@ -27,3 +28,4 @@ originSessionId: fd261f76-6c66-47b8-8059-e0397e734bc5
 - Memory 系统、2Q 双队列淘汰、A1/Am 晋升、分类命名空间、MEMORY.md 索引、CLAUDE.md vs memory vs Task、PostToolUse GitHub 同步
 - 大模型混战、耐力线/成本线/上下文线、Claude Mythos 5、GPT-6 Spud、Gemini 3.1 Ultra、DeepSeek V4 $5.2M、GLM-5.1 8小时、Qwen 3.5-Omni、Gemma 4、千问·小九墨、门槛下移
 - Hermes Agent、Nous Research、learning loop、agent-curated memory、autonomous skill creation、agentskills.io、Honcho、Gateway 多平台、Daytona/Modal 冬眠、200+ 模型无锁、工具路线 vs 队友路线、Unix utility vs live companion
+- DeepSeek V4 拆解、V4-Pro/Flash 价目（21x/8.6x）、LiveCodeBench 93.5、SWE-Bench Pro 短板、技术报告自爆 3-6 个月落后、Hybrid Attention CSA+HCA、KV cache 10%、黄仁勋 disaster、Ascend 950、5.2M 谣言修正、open-weight ≠ open-source
